@@ -7,7 +7,7 @@ function preventDefault(event) {
   event.preventDefault();
 }
 
-export default function Deposits() {
+export default function Progress() {
   return (
     <React.Fragment>
       <Title>Progress</Title>
