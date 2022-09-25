@@ -20,7 +20,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Progress from './Progress';
-import Orders from './Orders';
+import CalorieCounter from './Interface';
 
 function Copyright(props) {
   return (
@@ -189,7 +189,7 @@ function DashboardContent() {
               </Grid>
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                  <Orders />
+                  <CalorieCounter />
                 </Paper>
               </Grid>
             </Grid>
