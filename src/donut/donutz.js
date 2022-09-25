@@ -26,7 +26,7 @@ export const options = {
     responsive: true,
     plugins: {
         legend: {
-            position: 'top' as const,
+            position: 'top',
         },
         title: {
             display: true,
@@ -55,6 +55,6 @@ export const data = {
     ],
 };
 
-export function App() {
+export function LineChart() {
     return <Line options={options} data={data} />;
 }

@@ -18,9 +18,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-import Chart from './Chart';
 import Progress from './Progress';
 import CalorieCounter from './Interface';
+import { LineChart } from '../donut/donutz';
 
 function Copyright(props) {
   return (
@@ -172,7 +172,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <Chart />
+                  <LineChart />
                 </Paper>
               </Grid>
               <Grid item xs={12} md={4} lg={3}>
