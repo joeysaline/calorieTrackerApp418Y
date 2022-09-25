@@ -10,12 +10,12 @@ function preventDefault(event) {
 export default function Deposits() {
   return (
     <React.Fragment>
-      <Title>Recent Progress</Title>
+      <Title>Progress</Title>
       <Typography component="p" variant="h4">
         +0
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on January 1st, 1990
+        this current week:
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
