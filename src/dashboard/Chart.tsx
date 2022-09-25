@@ -4,20 +4,20 @@ import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer } from 'recha
 import Title from './Title';
 
 // Generate Sales Data
-function createData(day, amount) {
-  return { day, amount };
+function createData(time: string, amount?: number) {
+  return { time, amount };
 }
 
 const data = [
-  createData('Sunday', 0),
-  createData('Monday', 3000),
-  createData('Tuesday', 2000),
-  createData('Wednesday', 3500),
-  createData('Thursday', 1700),
-  createData('Friday', 2100),
-  createData('Saturday', 2400),
-
-
+  createData('00:00', 0),
+  createData('03:00', 300),
+  createData('06:00', 600),
+  createData('09:00', 800),
+  createData('12:00', 1500),
+  createData('15:00', 2000),
+  createData('18:00', 2400),
+  createData('21:00', 2400),
+  createData('24:00', undefined),
 ];
 
 export default function Chart() {
@@ -25,7 +25,7 @@ export default function Chart() {
 
   return (
     <React.Fragment>
-      <Title>Your Weekly Caloric Intake</Title>
+      <Title>Today</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}
@@ -37,10 +37,9 @@ export default function Chart() {
           }}
         >
           <XAxis
-            dataKey="week"
+            dataKey="time"
             stroke={theme.palette.text.secondary}
             style={theme.typography.body2}
-
           />
           <YAxis
             stroke={theme.palette.text.secondary}
@@ -55,7 +54,7 @@ export default function Chart() {
                 ...theme.typography.body1,
               }}
             >
-              Calories
+              Sales ($)
             </Label>
           </YAxis>
           <Line

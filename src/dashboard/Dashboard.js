@@ -18,9 +18,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-import Progress from './Progress';
-import CalorieCounter from './Interface';
-import { LineChart } from '../donut/donutz';
+import Chart from './Chart';
+import Deposits from './Deposits';
+import Orders from './Orders';
 
 function Copyright(props) {
   return (
@@ -84,7 +84,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 const mdTheme = createTheme();
 
 function DashboardContent() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -118,7 +118,7 @@ function DashboardContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Hey Coach
+              Dashboard
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -164,32 +164,34 @@ function DashboardContent() {
             <Grid container spacing={3}>
               {/* Chart */}
               <Grid item xs={12} md={8} lg={9}>
-                {/* <Paper
+                <Paper
                   sx={{
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
                     height: 240,
                   }}
-                > */}
-                <Paper><br /><LineChart /><br /></Paper>
-                {/* </Paper> */}
+                >
+                  <Chart />
+                </Paper>
               </Grid>
+              {/* Recent Deposits */}
               <Grid item xs={12} md={4} lg={3}>
                 <Paper
                   sx={{
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 454,
+                    height: 240,
                   }}
                 >
-                  <Progress />
+                  <Deposits />
                 </Paper>
               </Grid>
+              {/* Recent Orders */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                  <CalorieCounter />
+                  <Orders />
                 </Paper>
               </Grid>
             </Grid>
