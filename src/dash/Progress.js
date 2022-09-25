@@ -17,7 +17,7 @@ export default function Progress(data) {
   return (
     <React.Fragment>
       <Title>Progress</Title>
-      <Typography component="p">
+      <Typography component="p" sx={{ fontSize: '1.5rem' }}>
         + {' ' + sum + ' calories'}
       </Typography>
       <div>
