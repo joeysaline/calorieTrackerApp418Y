@@ -7,15 +7,13 @@ function preventDefault(event) {
   event.preventDefault();
 }
 
-export default function Progress() {
+export default function Progress(sum) {
+  sum = 10000
   return (
     <React.Fragment>
       <Title>Progress</Title>
       <Typography component="p" variant="h4">
-        +0
-      </Typography>
-      <Typography color="text.secondary" sx={{ flex: 1 }}>
-        this current week:
+        + {' ' + sum}
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
