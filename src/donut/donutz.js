@@ -24,7 +24,7 @@ ChartJS.register(
 
 export const options = {
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     plugins: {
         legend: {
             position: 'top',
@@ -53,7 +53,7 @@ export const data = {
 export function LineChart() {
     return (
         <Container>
-            <Line options={options} data={data} />;
+            <Line options={options} data={data} />
         </Container>
     )
 }

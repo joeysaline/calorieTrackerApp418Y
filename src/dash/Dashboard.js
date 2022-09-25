@@ -164,16 +164,16 @@ function DashboardContent() {
             <Grid container spacing={3}>
               {/* Chart */}
               <Grid item xs={12} md={8} lg={9}>
-                <Paper
+                {/* <Paper
                   sx={{
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
                     height: 240,
                   }}
-                >
-                  <LineChart />
-                </Paper>
+                > */}
+                <Paper><br /><LineChart /><br /></Paper>
+                {/* </Paper> */}
               </Grid>
               <Grid item xs={12} md={4} lg={3}>
                 <Paper
@@ -181,7 +181,7 @@ function DashboardContent() {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 454,
                   }}
                 >
                   <Progress />
