@@ -98,7 +98,7 @@ export function CalorieCounter() {
 
     const MealList = () => {                                                           //meal list DOM object, holds list of MealItems
         return (
-            <List>
+            <List style={{ paddingTop: "0px" }}>
                 {mealItems.map((item, i) => (
                     <MealItem
                         key={i}
@@ -220,7 +220,7 @@ export function CalorieCounter() {
                 <Paper>
                     <br />
                     <Stack justifyContent="left">
-                        <Container style={{ fontSize: "24px", paddingLeft: "22px", margin: "0px", textAlign: "left" }}>Add Meal / Food Item</Container>
+                        <Container style={{ fontSize: "24px", paddingLeft: "22px", margin: "0px", textAlign: "left" }}>Add Meal</Container>
                         <br />
                         <ThemeProvider theme={TFtheme}>
                             <Grid container spacing={1}>
@@ -252,16 +252,15 @@ export function CalorieCounter() {
                         <ButtonHandler />
                     </Stack>
                     <br />
-                    <br />
                 </Paper>
             </Stack>
-            <br />
-            <br />
             <Container style={{
-                textAlign: "center",
-                fontSize: "2.92rem"
+                textAlign: "left",
+                fontSize: "1rem",
+                margin: "0px"
             }}>
-                <h3>Total Calories: {calSum}</h3>
+                <br />
+                <h3 style={{ margin: ".2rem" }}>Total: {calSum} calories</h3>
             </Container>
             <MealList />
         </Box>
