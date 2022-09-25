@@ -48,7 +48,7 @@ export const mainListItems = (
 export const secondaryListItems = (
   <React.Fragment>
     <ListSubheader component="div" inset>
-      Saved reports
+      Past Caloric data
     </ListSubheader>
     <ListItemButton>
       <ListItemIcon>
