@@ -15,7 +15,7 @@ export default function Progress(data) {
     sum += data.data[i]
   }
   return (
-    <React.Fragment>
+    <>
       <Title>Progress</Title>
       <Typography component="p" sx={{ fontSize: '1.5rem' }}>
         + {' ' + sum + ' calories'}
@@ -25,6 +25,6 @@ export default function Progress(data) {
           View details
         </Link>
       </div>
-    </React.Fragment>
+    </ >
   );
 }
