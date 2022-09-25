@@ -20,7 +20,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Progress from './Progress';
 import CalorieCounter from './Interface';
-import { LineChart } from '../donut/donutz';
+import { LineChart, data } from '../donut/donutz';
 
 function Copyright(props) {
   return (
@@ -88,6 +88,8 @@ function DashboardContent() {
   const toggleDrawer = () => {
     setOpen(!open);
   };
+
+  const myChart = <LineChart />
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -162,18 +164,10 @@ function DashboardContent() {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
-              {/* Chart */}
               <Grid item xs={12} md={8} lg={9}>
-                {/* <Paper
-                  sx={{
-                    p: 2,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    height: 240,
-                  }}
-                > */}
-                <Paper><br /><LineChart /><br /></Paper>
-                {/* </Paper> */}
+                <Paper><br />
+                  {myChart}
+                  <br /></Paper>
               </Grid>
               <Grid item xs={12} md={4} lg={3}>
                 <Paper
@@ -184,7 +178,7 @@ function DashboardContent() {
                     height: 454,
                   }}
                 >
-                  <Progress />
+                  <Progress data={data.datasets[0].data} />
                 </Paper>
               </Grid>
               <Grid item xs={12}>
