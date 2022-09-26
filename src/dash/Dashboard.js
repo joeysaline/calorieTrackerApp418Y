@@ -17,7 +17,7 @@ import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
+import { mainListItems, secondaryListItems, TernaryListItems } from './listItems';
 import Progress from './Progress';
 import CalorieCounter from './Counter';
 import { LineChart, data } from '../donut/donutz';
@@ -147,6 +147,8 @@ function DashboardContent() {
             {mainListItems}
             <Divider sx={{ my: 1 }} />
             {secondaryListItems}
+            <Divider sx={{ my: 1 }} />
+            {TernaryListItems}
           </List>
         </Drawer>
         <Box
