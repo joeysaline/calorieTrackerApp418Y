@@ -255,13 +255,12 @@ export function Interface() {
                     <br />
                 </Paper>
             </Stack>
-            <br />
-            <br />
             <Container style={{
-                textAlign: "center",
-                fontSize: "2.92rem"
+                textAlign: "left",
+                fontSize: "1rem",
+                margin: ".1rem"
             }}>
-                <h3>Total: {calSum}</h3>
+                <h3>Net daily intake: {calSum + " calories"}</h3>
             </Container>
             <MealList />
         </Box>
