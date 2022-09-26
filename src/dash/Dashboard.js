@@ -19,7 +19,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Progress from './Progress';
-import CalorieCounter from './Interface';
+import CalorieCounter from './Counter';
 import { LineChart, data } from '../donut/donutz';
 
 function Copyright(props) {
