@@ -6,9 +6,10 @@ import ListSubheader from '@mui/material/ListSubheader';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LoginIcon from '@mui/icons-material/Login';
 import PeopleIcon from '@mui/icons-material/People';
-import BarChartIcon from '@mui/icons-material/BarChart';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 
 export const mainListItems = (
   <React.Fragment>
@@ -26,13 +27,13 @@ export const mainListItems = (
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <PeopleIcon />
+        <RestaurantIcon />
       </ListItemIcon>
       <ListItemText primary="Meals" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <BarChartIcon />
+        <FitnessCenterIcon />
       </ListItemIcon>
       <ListItemText primary="Activity" />
     </ListItemButton>
