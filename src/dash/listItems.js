@@ -70,3 +70,24 @@ export const secondaryListItems = (
     </ListItemButton>
   </React.Fragment>
 );
+
+export const TernaryListItems = (
+    <React.Fragment>
+        <ListSubheader component="div" inset>
+            My Saved Items
+        </ListSubheader>
+        <ListItemButton>
+            <ListItemIcon>
+                <AssignmentIcon />
+            </ListItemIcon>
+            <ListItemText primary="My workouts" />
+        </ListItemButton>
+        <ListItemButton>
+            <ListItemIcon>
+                <AssignmentIcon />
+            </ListItemIcon>
+            <ListItemText primary="My foods" />
+        </ListItemButton>
+
+    </React.Fragment>
+);
