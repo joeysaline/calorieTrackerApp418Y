@@ -9,3 +9,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - Database
  - Recoil global states for pages
  - Workout Tracker and calorie burn
+ - Import foods directly from fda
