@@ -42,10 +42,16 @@ export const data = {
     labels,
     datasets: [
         {
-            label: 'Caloric Intake',
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 3500 })),
+            label: 'Calorie Intake',
+            data: labels.map(() => faker.datatype.number({ min: 1000, max: 4000 })),
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        },
+        {
+            label: 'Calorie Burn',
+            data: labels.map(() => faker.datatype.number({ min: 500, max: 3000 })),
+            borderColor: 'rgb(30, 99, 200)',
+            backgroundColor: 'rgb(30, 99, 250)',
         },
     ],
 };
