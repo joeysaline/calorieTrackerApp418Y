@@ -8,7 +8,7 @@ export default function SignUp() {
 
     return (
         <>
-            <Container className='mt-5' style={{ maxWidth: "600px"}}>
+            <Container className='mt-5' style={{ maxWidth: "600px" }}>
                 <Card>
                     <Card.Body>
                         <h2 className='text-center mb-4'>Sign Up</h2>

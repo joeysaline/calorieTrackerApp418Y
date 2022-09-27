@@ -1,12 +1,19 @@
 import './App.css';
-// import Dashboard from './dash/Dashboard';
+import { useState } from 'react';
+import Dashboard from './dash/Dashboard';
 import SignUp from './user-auth/SignUp'
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [displayLogIn, setDisplayLogIn] = useState(false);
+  while (!loggedIn) {
+    return (
+      <SignUp />
+    )
+  }
   return (
-    // <Dashboard />
-    <SignUp />
-  );
+    <Dashboard />
+  )
 }
 
 export default App;
