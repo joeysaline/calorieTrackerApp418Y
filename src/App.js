@@ -5,7 +5,6 @@ import SignUp from './user-auth/SignUp'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [displayLogIn, setDisplayLogIn] = useState(false);
   while (!loggedIn) {
     return (
       <SignUp />
